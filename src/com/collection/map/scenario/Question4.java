@@ -6,7 +6,9 @@ import java.util.TreeMap;
 
 /*Dictionary Application:
         - Map<String, String>: word -> meaning.
- - Add, search, update, remove. Sorted output with TreeMap.*/
+ - Add, search, update, remove. Sorted output with TreeMap.
+ */
+
 public class Question4 {
     public static Map<String,String>dictionary=new TreeMap<String,String>();
     public static  void add(String word,String meaning)
