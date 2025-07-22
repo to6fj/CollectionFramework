@@ -1,0 +1,96 @@
+/*
+ * Java Collection Map Interface Programming Questions
+ * Covers: HashMap, LinkedHashMap, TreeMap, Hashtable
+ * Level: Basic to Advanced (Interview-Oriented)
+ */
+// ------------------------ BASIC LEVEL ------------------------
+1. Create a HashMap to store student names (String) and their marks (Integer). Add 5 entries and print them.
+
+2. Retrieve a value from the map using a given key.
+
+3. Check if a specific key or value exists in the map.
+
+4. Remove an entry from the map using the key.
+
+5. Iterate over keys, values, and key-value pairs in a map.
+
+6. Find the size of the map and clear all elements.
+
+7. Replace a value associated with a given key.
+
+8. Create a LinkedHashMap and observe the insertion order of elements.
+
+9. Demonstrate the use of putIfAbsent() method.
+
+10. Use getOrDefault() to return default value for missing key.
+
+11. Create a map and use forEach() method to iterate with lambda.
+
+// ------------------------ INTERMEDIATE LEVEL ------------------------
+
+12. Create a TreeMap and store employee names in sorted order of keys.
+
+13. Sort a HashMap by keys and by values (ascending/descending).
+
+14. Find the key with the maximum value in a map.
+
+15. Count the frequency of each character in a string using a HashMap.
+
+16. Create a phone book app using Map<String, List<String>> for names and their phone numbers.
+
+17. Group a list of words by their first letter using a Map<Character, List<String>>.
+
+18. Merge two maps. If a key exists in both, sum the values.
+
+19. Implement a simple LRU (Least Recently Used) cache using LinkedHashMap.
+
+20. Copy all mappings from one map to another using putAll().
+
+21. Use compute(), computeIfAbsent(), and computeIfPresent() on a map.
+
+22. Create a case-insensitive word counter using TreeMap with custom Comparator.
+
+// ------------------------ ADVANCED LEVEL ------------------------
+
+23. Detect duplicate entries across two maps.
+
+24. Create a TreeMap to represent a leaderboard, with scores sorted in descending order.
+
+25. Implement a word count program that takes multiple strings and returns the top 5 most frequent words.
+
+26. Build a nested map structure: Map<String, Map<String, Integer>> to represent student -> subject -> marks.
+
+27. Use ConcurrentHashMap to perform thread-safe operations in a multi-threaded environment.
+
+28. Create a program to index a paragraph by words and their positions using Map<String, List<Integer>>.
+
+29. Serialize and deserialize a map using ObjectOutputStream/ObjectInputStream.
+
+30. Convert a map to a JSON string and vice versa using any JSON library (e.g., Jackson/Gson).
+
+31. Create a multimap structure using Map<K, List<V>> and perform operations like insert, search, remove.
+
+32. Create a Map where key is an object (e.g., Employee) and override hashCode() and equals() to avoid key conflicts.
+
+33. Implement a program to cache API responses using a HashMap with TTL (Time to Live).
+
+34. Remove all entries from a map where value is less than a threshold.
+
+35. Iterate over a map using entrySet iterator and modify values.
+
+36. Use Map.Entry.comparingByKey() and comparingByValue() for sorting.
+
+// ------------------------ BONUS (TRICKY INTERVIEW) ------------------------
+
+37. Detect if two strings are anagrams using Map.
+
+38. Find all pairs in an array whose sum is equal to a target using Map.
+
+39. Create a frequency counter for any data type using Generics and Map<K, Integer>.
+
+40. Demonstrate fail-fast behavior of HashMap using an iterator.
+
+41. Difference between HashMap and Hashtable with thread-safe example.
+
+42. Implement a data structure like a Trie using nested maps.
+
