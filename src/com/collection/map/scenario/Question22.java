@@ -17,6 +17,8 @@ public class Question22 {
         map.put("Six",6);
         map.put("Seven",7);
         map.put("Eight",8);
+        List<String> list = map.keySet().stream().toList();
+        List<Integer> list1 = map.values().stream().toList();
 
         List<String>keys=new ArrayList<>(map.keySet());
         List<Integer>values=new ArrayList<>(map.values());
