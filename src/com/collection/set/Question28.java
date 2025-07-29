@@ -4,9 +4,8 @@ package com.collection.set;
 28. Group email addresses and print only unique domain names.
 */
 
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
+
+import java.util.*;
 
 public class Question28 {
     public static void main(String[] args) {
@@ -20,15 +19,23 @@ public class Question28 {
                 "grace@outlook.com",
                 "heidi@icloud.com",
                 "ivan@gmail.com",
-                "judy@protonmail.com"
+                "judy@protonmail.com",
+                "shubhampuri1998@gmail.com"
         };
-        Set<String> set = new HashSet<>();
-        for (String email : emails) {
-            if(email.contains("@gmail.com")) {
-                set.add(email);
+        Map<String,List<String>> map = new HashMap<>();
+        for(String email : emails) {
+            int index = email.indexOf('@');
+            String domain=email.substring(index);
+            if(!map.containsKey(domain)) {
+                map.put(domain, new ArrayList<>());
             }
+            map.get(domain).add(email);
+
+
         }
-        set.forEach(System.out::println);
+        map.forEach( (k,v) -> {
+            System.out.println(k+" "+v);
+        });
 
     }
 }
