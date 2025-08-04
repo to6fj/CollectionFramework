@@ -7,7 +7,6 @@ package com.java8.functionalinterface.exercise;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.function.BiConsumer;
-
 public class Question38 {
     public static void main(String[] args) {
         Map<Integer,String> map = new HashMap<>();
