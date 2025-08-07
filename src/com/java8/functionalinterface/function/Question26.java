@@ -7,7 +7,7 @@ package com.java8.functionalinterface.function;
 import java.util.function.Function;
 
 public class Question26 {
-    public static void main(String[] args) {
+    public static void main(String[] args) {    
         String name="shubham";
         Function<String,Integer>ascii=x->{
             int sum=0;
