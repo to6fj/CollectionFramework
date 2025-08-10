@@ -11,5 +11,12 @@ public class CollectorsToSetDemo
                 .collect(Collectors.toSet());
         nums.add(9);
         nums.forEach(System.out::println);
+
+        //unmodifbaleset
+        Set<Integer> unmodifibaleSet = Stream.of(1, 2, 3, 4, 5, 6, 7, 8)
+                .collect(Collectors.toUnmodifiableSet());
+        unmodifibaleSet.forEach(System.out::println);
+
+
     }
 }
